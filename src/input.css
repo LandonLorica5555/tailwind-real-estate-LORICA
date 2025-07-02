@@ -11,7 +11,7 @@
     @apply max-w-7xl w-full px-4 mx-auto;
   }
   .aboutContainer {
-     @apply max-w-7xl w-full px-4 mx-auto;
+    @apply max-w-7xl w-full px-4 mx-auto;
   }
 }
 @layer components {
@@ -25,7 +25,7 @@
   .header__nav {
     @apply flex max-h-full h-full bg-white fixed w-full flex-col top-[6.2rem] right-[-100%] items-center gap-5 overflow-hidden
     md:max-h-none md:h-auto md:relative md:w-auto md:flex-row md:top-auto md:gap-20 
-    xl:gap-[30rem] ease-in-out duration-700 md:right-auto; 
+    xl:gap-[30rem] ease-in-out duration-700 md:right-auto;
   }
   .header__nav.open {
     @apply right-0 z-50 overflow-y-hidden ease-in-out duration-700;
@@ -116,19 +116,19 @@
   .aboutOffer__card__details p {
     @apply mt-5 text-justify;
   }
-   /* ABOUT PAGE END */
-   /* PROPERTIES PAGE */
-   .propertiesOffer__title {
-    @apply text-center mb-2;
-   }
-   .propertiesOffer__card {
-    @apply flex flex-col lg:flex-row items-center justify-center my-5;
-   }
-   .propertiesOffer__card__details {
-    @apply px-5 py-10 text-left`;
-   }
-   .propertiesOffer__card img {
-    @apply w-full lg:w-auto md:object-cover lg:h-auto;
+  /* ABOUT PAGE END */
+  /* PROPERTIES PAGE */
+  .propertiesOffer__title {
+    @apply text-center mb-4;
+  }
+  .propertiesOffer__card {
+    @apply grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center my-5;
+  }
+  .propertiesOffer__card__details {
+    @apply px-5 py-10 text-left;
+  }
+  .propertiesOffer__card img {
+    @apply w-full h-full md:object-cover;
   }
   .propertiesOffer__card__details h4 {
     @apply text-xl font-bold lg:text-3xl;
@@ -139,6 +139,78 @@
   .propertiesOffer__card__details a {
     @apply text-primary;
   }
+  /* PROPERTIES PAGE END*/
+  /* SINGLE PROPERTIES PAGE */
+  .singleProperties__wrapper {
+    @apply grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-[8rem];
+  }
+  /* main article */
+  .singleProperties__wrapper h3 {
+    @apply text-xl font-bold lg:text-3xl mb-5;
+  }
+  .singleProperties__wrapper img {
+    @apply md:object-cover mb-5;
+  }
+  .singleProperties__wrapper main article p {
+    @apply text-justify;
+  }
+  /* main article end*/
+  /* aside */
+  .singleProperties__posts h5 {
+    @apply text-xl font-bold mb-5;
+  }
+  .singleProperties__details--signup h5 {
+    @apply text-xl font-bold;
+  }
+  /* email box */
+  .email__form {
+    @apply flex flex-row gap-2 items-center;
+  }
+  .email-form__wrapper {
+    @apply border-2 border-gray-700 box-border;
+  }
+  /* aside card */
+
+  .singleProperties__card {
+    @apply flex flex-row gap-5;
+  }
+  .singleProperties__card__details h6 {
+    @apply text-lg font-bold mb-3;
+  }
+  .singleProperties__card__details p:nth-child(1) {
+    @apply mb-3;
+  }
+  .singleProperties__card__details p:nth-child(2) {
+    @apply mb-3;
+  }
+  /* aside card */
+  /* aside end */
+  /* SINGLE PROPERTIES PAGE END */
+  /* CONTACT PAGE */
+  .contact__details__wrapper {
+    @apply grid grid-cols-[1fr_1fr] m-[8rem];
+  }
+  .contact__details__info__wrapper {
+    @apply mb
+  }
+  .contact__details__info__cards {
+    @apply grid bg-white shadow-black rounded-lg p-4 max-w-sm;
+  }
+  .contact__details__nameform__wrapper {
+    @apply flex flex-row;
+  }
+
+  .form-info__wrapper {
+    @apply font-bold border-[1px] rounded-md border-black my-2 text-primary;
+  }
+  .form-info__wrapper input, .form-info__wrapper textarea {
+    @apply px-1;
+  }
+
+  .contact__details__form__name {
+    @apply flex flex-row;
+  }
+  /* CONTACT PAGE END */
   /* FOOTER */
   .footer {
     @apply py-7 font-light text-white bg-primary;
