@@ -6,12 +6,11 @@
     <title>Real Estate - Contact</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" href="../img/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
+
     <!-- header -->
     <header class="header">
       <div class="container">
@@ -37,64 +36,50 @@
       </div>
     </header>
 
-    <!-- contact us -->
-    <section class="contact py-[10rem]">
-      <div class="co+ntainer">
-        <div class="contact__details__wrapper">
-          <div class="contact__details__info__wrapper">
-            <small>CONTACT US</small>
-            <h3 class="text-3xl font-bold">Let's Working Together</h3>
-            <p>
-              Thank you for your interest in our services. <br />
-              We're excited to hear from you.
-            </p>
-            <div class="contact__details__info__cards__wrapper">
-              <div class="contact__details__info__cards">
-                <i class="fa-solid fa-headphones-simple"></i>
-                <p>Call us for inquiry</p>
-                <h3 class="text-xl font-bold">+258 (549) 2158 3215</h3>
+    <section class="contact h-dvh pt-44 pb-24">
+      <div class="container">
+        <small>CONTACT US</small>
+        <div class="contact__wrapper grid grid-cols-1 gap-10 lg:grid-cols-[1fr_2fr]">
+          <div class="contact__details">
+            <h3 class="text-2xl lg:text-4xl font-bold mb-3">Let's Working Together</h3>
+            <p class="mb-5">Thank you for your interest in our services. We're excited to hear from you. </p>
+            <div class="contact__details__item">
+              <p>
+                <span><i class="fa-solid fa-headphones-simple"></i></span>
+              </p>
+              <div>
+                <small>Call us for Inquiry</small>
+                <h6>+256 (549) 2158 3215</h6>
               </div>
-              <div class="contact__details__info__cards">
-                <i class="fa-solid fa-envelope"></i>
-                <p>Email us anytime</p>
-                <h3 class="text-xl font-bold">realestate@mail.com</h3>
+            </div>
+            <div class="contact__details__item">
+              <p>
+                <span><i class="fa-solid fa-envelope"></i></span>
+              </p>
+              <div>
+                <small>Email anytime</small>
+                <h6>realestate@mail.com</h6>
               </div>
-              <div class="contact__details__info__cards">
-                <i class="fa-solid fa-map-pin"></i>
-                <p>Visit our office</p>
-                <h3 class="text-xl font-bold">
-                  15 Maniel Lane, Frontline Berlin
-                </h3>
+            </div>
+            <div class="contact__details__item">
+              <p>
+                <span><i class="fa-solid fa-map-pin"></i></span>
+              </p>
+              <div>
+                <small>Visit our office</small>
+                <h6>15 Maniel Lane, Frontline Berlin</h6>
               </div>
             </div>
           </div>
-          <div class="contact__details__form__wrapper">
-            <div class="contact__details__form__name">
-              <form class="form" action="form">
-                <div class="form-info__wrapper">
-                  <input type="text" placeholder="First Name" />
-                </div>
-                <div class="form-info__wrapper">
-                  <input type="text" placeholder="Last Name" />
-                </div>
-              </form>
+          <form action="" class="contact__form">
+            <div class="flex gap-5">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name"/>
             </div>
-            <form class="form" action="#">
-              <div class="form-info__wrapper">
-                <input type="email" placeholder="Email" />
-              </div>
-              <div class="form-info__wrapper">
-                <textarea
-                  name=""
-                  cols="30"
-                  rows="10"
-                  id=""
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </form>
-            <a href="#" class="btn btn--primary mt-6">Send Message</a>
-          </div>
+            <input type="text" placeholder="Email Address"/>
+            <textarea class="resize-none" rows="5" id="" placeholder="Message"></textarea>
+            <button class="btn--primary mt-5">Send Message</button>
+          </form>
         </div>
       </div>
     </section>

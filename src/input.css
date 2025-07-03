@@ -187,28 +187,17 @@
   /* aside end */
   /* SINGLE PROPERTIES PAGE END */
   /* CONTACT PAGE */
-  .contact__details__wrapper {
-    @apply grid grid-cols-[1fr_1fr] m-[8rem];
+  .contact__details__item {
+    @apply flex gap-5 items-center bg-white shadow-md w-96 py-4 px-3 mb-5;
   }
-  .contact__details__info__wrapper {
-    @apply mb
+  .contact__details__item p > span {
+    @apply bg-primary text-white py-2 px-3 text-2xl rounded-full;
   }
-  .contact__details__info__cards {
-    @apply grid bg-white shadow-black rounded-lg p-4 max-w-sm;
+  .contact__details__item h6 {
+    @apply text-base font-bold;
   }
-  .contact__details__nameform__wrapper {
-    @apply flex flex-row;
-  }
-
-  .form-info__wrapper {
-    @apply font-bold border-[1px] rounded-md border-black my-2 text-primary;
-  }
-  .form-info__wrapper input, .form-info__wrapper textarea {
-    @apply px-1;
-  }
-
-  .contact__details__form__name {
-    @apply flex flex-row;
+  .contact__form input, textarea {
+    @apply border border-black px-4 py-3 rounded-lg w-full placeholder:font-medium placeholder:text-black mb-5;
   }
   /* CONTACT PAGE END */
   /* FOOTER */
